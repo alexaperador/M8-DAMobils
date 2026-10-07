@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Calculadora</string>
+    <string name="input0">0</string>
+    <string name="inputMC">MC</string>
+    <string name="inputMR">MR</string>
+    <string name="inputMS">MS</string>
+    <string name="inputAC">AC</string>
+    <string name="inputMsum">M+</string>
+    <string name="inputMresta">M-</string>
+    <string name="inputC">C</string>
+    <string name="inputDiv">/</string>
+    <string name="input7">7</string>
+    <string name="input8">8</string>
+    <string name="input9">9</string>
+    <string name="inputMulti">X</string>
+    <string name="input4">4</string>
+    <string name="input5">5</string>
+    <string name="input6">6</string>
+    <string name="inputResta">-</string>
+    <string name="input1">1</string>
+    <string name="input2">2</string>
+    <string name="input3">3</string>
+    <string name="inputSum">+</string>
+    <string name="inputEquals">=</string>
 </resources>
