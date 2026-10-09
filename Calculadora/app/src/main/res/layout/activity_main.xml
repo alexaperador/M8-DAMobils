@@ -4,179 +4,176 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <LinearLayout
+    <EditText
+        android:id="@+id/input"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:orientation="vertical"
-        >
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:hint="@string/input0"
+        android:background="@drawable/rounded"
+        android:backgroundTint="@color/backgroundInput"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="end|center_vertical"
+        android:inputType="number"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/input0"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_margin="14dp"
+        android:textStyle="bold" />
 
-        <EditText
-            android:scrollHorizontally="true"
-            android:id="@+id/input"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginBottom="16dp"
-            android:autofillHints=""
-            android:background="@drawable/rounded"
-            android:backgroundTint="@color/backgroundInput"
-            android:clickable="false"
-            android:singleLine="true"
-            android:focusable="false"
-            android:gravity="end|center_vertical"
-            android:inputType="number"
-            android:padding="16dp"
-            android:text="@string/input0"
-            android:textColor="@color/white"
-            android:textSize="40sp"
-            android:textStyle="bold" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="14dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="@color/backgroundCalculadora"
+        android:columnCount="4"
+        android:padding="12dp"
+        android:useDefaultMargins="true">
 
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnCount="4"
-            android:padding="16dp"
-            android:background="@drawable/rounded"
-            android:backgroundTint="@color/backgroundCalculadora"
-            android:useDefaultMargins="true">
+        <Button
+            android:id="@+id/opMC"
+            style="@style/OPMemoryButton"
+            android:onClick="operacion"
+            android:text="@string/inputMC" />
 
-            <Button
-                android:id="@+id/opMC"
-                style="@style/OPMemoryButton"
-                android:onClick="operacion"
-                android:text="@string/inputMC" />
+        <Button
+            android:id="@+id/opMR"
+            style="@style/OPMemoryButton"
+            android:onClick="operacion"
+            android:text="@string/inputMR" />
 
-            <Button
-                android:id="@+id/opMR"
-                style="@style/OPMemoryButton"
-                android:onClick="operacion"
-                android:text="@string/inputMR" />
+        <Button
+            android:id="@+id/opMS"
+            style="@style/OPMemoryButton"
+            android:onClick="operacion"
+            android:text="@string/inputMS" />
 
-            <Button
-                android:id="@+id/opMS"
-                style="@style/OPMemoryButton"
-                android:onClick="operacion"
-                android:text="@string/inputMS" />
+        <Button
+            android:id="@+id/opAC"
+            style="@style/DangerButton"
+            android:onClick="operacion"
+            android:text="@string/inputAC" />
 
-            <Button
-                android:id="@+id/opAC"
-                style="@style/DangerButton"
-                android:onClick="operacion"
-                android:text="@string/inputAC" />
+        <Button
+            android:id="@+id/opMPlus"
+            style="@style/OPMemoryButton"
+            android:onClick="operacion"
+            android:text="@string/inputMsum" />
 
-            <Button
-                android:id="@+id/opMPlus"
-                style="@style/OPMemoryButton"
-                android:onClick="operacion"
-                android:text="@string/inputMsum" />
+        <Button
+            android:id="@+id/opMMinus"
+            style="@style/OPMemoryButton"
+            android:onClick="operacion"
+            android:text="@string/inputMresta" />
 
-            <Button
-                android:id="@+id/opMMinus"
-                style="@style/OPMemoryButton"
-                android:onClick="operacion"
-                android:text="@string/inputMresta" />
+        <Button
+            android:id="@+id/opDel1"
+            style="@style/DangerButton"
+            android:onClick="operacion"
+            android:text="@string/inputC" />
 
-            <Button
-                android:id="@+id/opDel1"
-                style="@style/DangerButton"
-                android:onClick="operacion"
-                android:text="@string/inputC" />
+        <Button
+            android:id="@+id/opDiv"
+            style="@style/OperationButton"
+            android:onClick="operacion"
+            android:text="@string/inputDiv" />
 
-            <Button
-                android:id="@+id/opDiv"
-                style="@style/OperationButton"
-                android:onClick="operacion"
-                android:text="@string/inputDiv" />
+        <Button
+            android:id="@+id/num7"
+            style="@style/NumberButton"
+            android:onClick="numero"
+            android:text="@string/input7" />
 
-            <Button
-                android:id="@+id/num7"
-                style="@style/NumberButton"
-                android:onClick="numero"
-                android:text="@string/input7" />
+        <Button
+            android:id="@+id/num8"
+            style="@style/NumberButton"
+            android:onClick="numero"
+            android:text="@string/input8" />
 
-            <Button
-                android:id="@+id/num8"
-                style="@style/NumberButton"
-                android:onClick="numero"
-                android:text="@string/input8" />
+        <Button
+            android:id="@+id/num9"
+            style="@style/NumberButton"
+            android:onClick="numero"
+            android:text="@string/input9" />
 
-            <Button
-                android:id="@+id/num9"
-                style="@style/NumberButton"
-                android:onClick="numero"
-                android:text="@string/input9" />
+        <Button
+            android:id="@+id/opMul"
+            style="@style/OperationButton"
+            android:onClick="operacion"
+            android:text="@string/inputMulti" />
 
-            <Button
-                android:id="@+id/opMul"
-                style="@style/OperationButton"
-                android:onClick="operacion"
-                android:text="@string/inputMulti" />
+        <Button
+            android:id="@+id/num4"
+            style="@style/NumberButton"
+            android:onClick="numero"
+            android:text="@string/input4" />
 
-            <Button
-                android:id="@+id/num4"
-                style="@style/NumberButton"
-                android:onClick="numero"
-                android:text="@string/input4" />
+        <Button
+            android:id="@+id/num5"
+            style="@style/NumberButton"
+            android:onClick="numero"
+            android:text="@string/input5" />
 
-            <Button
-                android:id="@+id/num5"
-                style="@style/NumberButton"
-                android:onClick="numero"
-                android:text="@string/input5" />
+        <Button
+            android:id="@+id/num6"
+            style="@style/NumberButton"
+            android:onClick="numero"
+            android:text="@string/input6" />
 
-            <Button
-                android:id="@+id/num6"
-                style="@style/NumberButton"
-                android:onClick="numero"
-                android:text="@string/input6" />
+        <Button
+            android:id="@+id/opRes"
+            style="@style/OperationButton"
+            android:onClick="operacion"
+            android:text="@string/inputResta" />
 
-            <Button
-                android:id="@+id/opRes"
-                style="@style/OperationButton"
-                android:onClick="operacion"
-                android:text="@string/inputResta" />
+        <Button
+            android:id="@+id/num1"
+            style="@style/NumberButton"
+            android:onClick="numero"
+            android:text="@string/input1" />
 
-            <Button
-                android:id="@+id/num1"
-                style="@style/NumberButton"
-                android:onClick="numero"
-                android:text="@string/input1" />
+        <Button
+            android:id="@+id/num2"
+            style="@style/NumberButton"
+            android:onClick="numero"
+            android:text="@string/input2" />
 
-            <Button
-                android:id="@+id/num2"
-                style="@style/NumberButton"
-                android:onClick="numero"
-                android:text="@string/input2" />
+        <Button
+            android:id="@+id/num3"
+            style="@style/NumberButton"
+            android:onClick="numero"
+            android:text="@string/input3" />
 
-            <Button
-                android:id="@+id/num3"
-                style="@style/NumberButton"
-                android:onClick="numero"
-                android:text="@string/input3" />
+        <Button
+            android:id="@+id/opSum"
+            style="@style/OperationButton"
+            android:onClick="operacion"
+            android:text="@string/inputSum" />
 
-            <Button
-                android:id="@+id/opSum"
-                style="@style/OperationButton"
-                android:onClick="operacion"
-                android:text="@string/inputSum" />
+        <Button
+            android:id="@+id/num0"
+            style="@style/NumberButton"
+            android:layout_columnSpan="2"
+            android:onClick="numero"
+            android:text="@string/input0" />
 
-            <Button
-                android:id="@+id/num0"
-                style="@style/NumberButton"
-                android:layout_columnSpan="2"
-                android:onClick="numero"
-                android:text="@string/input0" />
+        <Button
+            android:id="@+id/opEq"
+            style="@style/OperationButton"
+            android:layout_columnSpan="2"
+            android:onClick="operacion"
+            android:text="@string/inputEquals" />
 
-            <Button
-                android:id="@+id/opEq"
-                style="@style/OperationButton"
-                android:layout_columnSpan="2"
-                android:onClick="operacion"
-                android:text="@string/inputEquals" />
-
-        </GridLayout>
-    </LinearLayout>
+    </GridLayout>
 </LinearLayout>
