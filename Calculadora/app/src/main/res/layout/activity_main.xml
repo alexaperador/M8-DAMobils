@@ -10,15 +10,16 @@
     <EditText
         android:id="@+id/input"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="90dp"
+        android:layout_margin="14dp"
         android:layout_marginBottom="16dp"
         android:autofillHints=""
-        android:hint="@string/input0"
         android:background="@drawable/rounded"
         android:backgroundTint="@color/backgroundInput"
         android:clickable="false"
         android:focusable="false"
         android:gravity="end|center_vertical"
+        android:hint="@string/input0"
         android:inputType="number"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
@@ -26,8 +27,8 @@
         android:singleLine="true"
         android:text="@string/input0"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:textSize="40sp"
-        android:layout_margin="14dp"
         android:textStyle="bold" />
 
     <GridLayout
@@ -174,6 +175,5 @@
             android:layout_columnSpan="2"
             android:onClick="operacion"
             android:text="@string/inputEquals" />
-
     </GridLayout>
 </LinearLayout>

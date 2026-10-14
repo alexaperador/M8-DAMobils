@@ -3,21 +3,22 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundCalculadora"
+    android:background="@color/background"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="12dp">
 
     <EditText
         android:id="@+id/input"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
         android:autofillHints=""
-        android:hint="@string/input0"
         android:background="@drawable/rounded"
         android:backgroundTint="@color/backgroundInput"
         android:clickable="false"
         android:focusable="false"
         android:gravity="end|center_vertical"
+        android:hint="@string/input0"
         android:inputType="number"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
@@ -25,7 +26,7 @@
         android:singleLine="true"
         android:text="@string/input0"
         android:textColor="@color/white"
-        android:layout_marginHorizontal="20dp"
+        android:textColorHint="@color/white"
         android:textSize="32sp"
         android:textStyle="bold" />
 
@@ -33,10 +34,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:layout_margin="8dp"
         android:background="@drawable/rounded"
         android:backgroundTint="@color/backgroundCalculadora"
         android:columnCount="5"
-        android:layout_margin="20dp"
+        android:padding="8dp"
         android:useDefaultMargins="true">
 
         <Button
@@ -172,6 +174,5 @@
             android:layout_columnSpan="2"
             android:onClick="operacion"
             android:text="@string/inputEquals" />
-
     </GridLayout>
 </LinearLayout>
